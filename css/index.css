@@ -1,0 +1,649 @@
+@charset "utf-8";
+.container-fluid
+{
+	padding:0;
+}
+.row
+{
+	     margin-right: 0px !important;
+}
+                                              /* Contact */
+											  
+#logos
+{
+	color:#a7a7a7;
+	background-color:#000000;
+	height:37px;
+	font-family: 'Poppins', sans-serif;
+	
+}
+
+#logos i
+{
+	font-size:14px;
+}
+
+#logos-left
+{
+    margin-top: 6px;
+	padding-left:125px;
+	
+}
+
+#logos-left a
+{
+	color:#a7a7a7;
+	margin-right:8px;
+}
+
+#logos-right
+{
+	margin-top:6px;
+    
+}
+
+#logos-right i {
+   
+}
+
+span {
+    font-family: poppins, sans-serif;
+    font-size: 13px;
+}
+
+
+
+                                            /* Main Menu */
+#site-logo
+{
+	padding-left: 130px;
+	margin-top: 10px;
+	
+}
+
+#main-menu
+{
+	height:75px;
+	background-color:white;
+	
+}
+#menu-items 
+{
+	 margin-top: 10px;
+	 padding-top: 15px;
+}
+
+#menu-items a 
+{
+    color:black;
+	text-decoration:none;
+	padding-left: 20px;
+    padding-right: 20px;
+}
+
+#menu-items a:hover 
+{
+	color:orange;
+	transition:0.5s;
+}
+#menu-items a:active 
+{
+	color:orange;
+
+}
+#menu-items li 
+{
+    display: inline;
+	border-right: 1px solid #ddd;
+	padding-top: 24px;
+    padding-bottom: 27px;
+	font-size: 14px;
+    font-weight: 900;
+}
+#menu-items i
+{
+	font-size:20px;
+	color:black;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  
+}
+
+
+.dropdown-content {
+
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+   transition: 2.5s;
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  transition: 2.5s;
+  color:orange;
+  	
+}
+
+.dropdown:hover
+{
+	transition: 2.5s;
+}
+                                            /* Message */
+#message
+{
+	background-image:url(../images/slide.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	font-family: poppins,sans-serif;
+}
+
+#message-box
+{
+	background-color: rgba(265,165,0,0.8);
+	height:167px;
+}
+#feedback
+{
+	color:white;
+	font-size:56px;
+	font-family: 'Great Vibes', cursive;
+}
+
+
+.star
+{
+	color:red;
+}
+
+label
+{
+	margin-bottom:0rem;
+}
+
+#label-name
+{
+	color:white;
+}
+#label-message
+{
+	color:white;
+}
+
+#boxes {
+    margin-left: 52px;
+}
+
+#about-restaurant img
+{
+	    margin-top: 57px;
+}
+
+.about-figure
+{
+	color: white;
+    width: 49%;
+    float: right;
+    margin-top: 37%;
+}
+.about-figure span {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+#about-restaurant {
+    padding-bottom: 63px;
+    margin-top: 38px;
+}
+
+                                            /* Partners */
+#partners h2
+{
+	font-family: 'Great Vibes', cursive;
+	color:orange;
+	font-size: 26px;
+}
+
+#partners h3
+{
+    font-family: poppins,sans-serif;
+    font-weight: 900;
+    font-size: 45px;
+}
+
+#partners p
+{
+	font-family: poppins,sans-serif;
+}
+
+#details {
+    margin-top: 45px;
+}
+
+.partners-logo img
+{
+	width:100%;
+}
+
+.partners-logo
+{
+	float:left;
+	
+	margin-bottom: 100px;
+    margin-top: 80px;
+	margin-left:3%;
+	border: 3px solid #f1f1f1;
+    box-shadow: 0 11px 0 0 rgba(0, 0, 0, 0.02);
+    height: 155px;
+    padding: 44px;
+    width: 155px;
+    border-radius: 100px;
+}
+
+
+                                            /* Services */
+											
+#services
+{
+	background-image:url(../images/service.jpg);
+	background-repeat:none;
+}
+
+#services h2
+{
+	font-family: 'Great Vibes', cursive;
+	color:orange;
+	font-size: 26px;
+	padding-top:45px;
+	
+}
+
+
+#services h3
+{
+    font-family: poppins,sans-serif;
+    font-weight: 900;
+    font-size: 45px;
+}
+
+#services p
+{
+	font-family: poppins,sans-serif;
+    margin-bottom: 0;
+}
+
+#services-box
+{
+	background-color: rgba(0,0,0,0.8);
+	color:white;
+}
+
+#deals {
+    margin-top: 39px;
+	padding-bottom: 102px;
+}
+
+
+#deals img {
+    width: 25%;
+}
+
+#deals h4
+{
+	font-size: 19px;
+    font-weight: 900;
+	margin-top: 14px;
+}
+
+#deals p {
+    margin-top: 21px;
+    font-size: 15px;
+}
+
+                                             /* Offers */
+
+#offers h2
+{
+	font-family: 'Great Vibes', cursive;
+	color:orange;
+	font-size: 26px;
+	padding-top:45px;
+	
+}
+
+
+#offers h3
+{
+    font-family: poppins,sans-serif;
+    font-weight: 900;
+    font-size: 45px;
+}
+
+#offers p
+{
+	font-family: poppins,sans-serif;
+    margin-bottom: 0;
+}
+
+#offers img {
+    width: 100%;
+	padding-top: 40px;
+	padding-bottom: 10px;
+}
+
+#offers a {
+    text-decoration: none;
+    color: orange;
+    font-size: 19px;
+    font-weight: 900;
+}
+
+#offers span
+{
+	font-size: 17px;
+    font-weight: 900;
+}
+
+.number-box
+{
+	    width: 30%;
+}
+
+#button-clr1
+{
+	background-color:orange;
+	border-color:orange;
+	margin-top:2px;
+}
+
+#button-clr1:hover
+{
+	background-color:#F8AA2B;
+}
+
+#button-clr2
+{
+	background-color:orange;
+	border-color:orange;
+	margin-top:2px;
+}
+
+#button-clr2:hover
+{
+	background-color:#F8AA2B;
+}
+
+#button-clr3
+{
+	background-color:orange;
+	border-color:orange;
+	margin-top:2px;
+}
+
+#button-clr3:hover
+{
+	background-color:#F8AA2B;
+}
+
+#deal-block
+{
+	background-color:#f9f9f9;
+}
+
+
+                                              /* Information */
+#information
+{
+	background-color:#212529;
+	color:white;
+	padding-bottom: 70px;
+	font-family: poppins,sans-serif;
+	
+}
+
+#information p
+{
+	font-size: 13px;
+}
+
+
+#info-block
+{	
+    padding-left: 5%;
+	padding-top: 56px;
+}
+
+#info-block h5 {
+    font-weight: 900;
+    font-size: 19px;
+}
+
+#fb
+{
+    color: white;
+    background-color: #496bb4;
+    padding: 13px 17px;
+    font-size: 17px !important;
+    border-radius: 50%;
+
+}
+
+#twitter
+{
+    color: white;
+    background-color: #009ad2;
+    padding: 14px 15px;
+    font-size: 17px !important;
+    border-radius: 50%;
+
+}
+
+#google
+{
+    color: white;
+    background-color: #db3623;
+    padding: 14px 12px;
+    font-size: 17px !important;
+    border-radius: 50%;
+
+}
+
+#whatsapp
+{
+    color: white;
+    background-color: #4FCE5D;
+    padding: 14px 16.5px;
+    font-size: 17px !important;
+    border-radius: 50%;
+
+}
+
+#photos-block
+{	
+    
+    padding-top: 56px;
+}
+
+#photos-block h5 {
+    font-weight: 900;
+    font-size: 19px;
+}
+
+#news-block
+{	
+   
+    padding-top: 56px;
+} 
+
+#news-block a
+{
+	color:orange;
+}
+
+#news-block h5 {
+    font-weight: 900;
+    font-size: 19px;
+} 
+
+#photos-images1 img
+{
+	margin-top: 8%;
+	width:32%;
+}
+#photos-images2 img
+{
+    margin-top: 1%;
+	width:32%;
+}
+                                           
+										   /* Footer */
+
+#footer
+{
+	background-color:orange;
+	color:black;
+	font-family: poppins,sans-serif;
+	
+}
+
+#passionates
+{
+	color:white;
+	font-size:16px;
+}
+
+                                           /* Media Queries */
+@media only screen and (min-width: 1148px) 
+{
+	#logos-right 
+	{
+    padding-left: 181px;
+    }
+
+}
+
+@media only screen and (max-width: 990px)
+{
+	#logos
+	{
+		height:64px;
+	}
+	#logos-left
+	{
+		text-align:center;
+		padding-left: 0px;
+	}
+	#logos-right
+	{
+		text-align:center;
+	}
+	#menu-items i
+	{
+		margin-top:-57px;
+	}
+	#site-logo
+	{
+		padding-left:30px;
+	}
+	#main-menu
+	{
+		margin-top:10px;
+	}
+}
+
+
+@media only screen and (max-width: 1220px)
+{
+	#main-menu
+	{
+		margin-top:4px;
+	}
+	#menu-items li
+	{
+		display:none;
+	}
+	#menu-items i
+	{
+		float:right;
+		padding-right:5px;
+	}
+	
+}
+@media only screen and (max-width: 795px)
+{
+	#info-block
+	{
+	flex: 0 0 100%;
+	max-width:100%;
+	
+	}
+	#news-block
+	{
+	flex: 0 0 100%;
+	max-width:100%;
+	
+	}
+	#photos-block
+	{
+	flex: 0 0 100%;
+	max-width:100%;
+	
+	}
+	
+	#message-box
+	{
+		height:300px;
+	}
+	#message-button
+	{
+		width:100% !important;
+	}
+	
+	.col-md-2
+	{
+		margin-left:15px;
+	}
+	
+	#photos-block
+	{
+		padding-left:37px;
+	}
+	
+	#news-block
+	{
+		padding-left:37px;
+	}
+	
+	#photos-images1 img
+{
+	
+	width:28%;
+}
+#photos-images2 img
+{
+    
+	width:28%;
+}
+}
+
+@media only screen and (min-width: 1220px)
+{
+	#menu-items i
+	{
+		display:none;
+	}
+}
+
+
+
+
+

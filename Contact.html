@@ -1,0 +1,289 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contact</title>
+<link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.css">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<link href="css/contact.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="container-fluid">
+ 
+    <div id="logos">
+      <div class="row">
+        <div id="logos-left" class="col-lg-6">
+          <a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="https://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="https://www.google.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+          <a href="https://web.whatsapp.com"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      </div>
+      
+      <div id="logos-right" class="col-lg-6">
+        <i class="fa fa-phone" aria-hidden="true"><span> 04234567821</span></i>
+        <i class="fa fa-mobile" aria-hidden="true"><span> +923001234512</span></i>
+        <i class="fa fa-envelope" aria-hidden="true"><span> contact@mail.com</span></i>
+      </div>
+    </div>
+    </div>
+    <div class="row" id="main-menu">
+      <div class="col-lg-4" id="site-logo">
+        <img src="images/log.png" style="width: 110px; margin-top:-15px; margin-left: 40px " >
+      </div>
+     
+      <div class="col-lg-7" id="menu-items">
+             <li><a href="Index.php">HOME</a></li>
+       
+        <li><a href="About Us.html">ABOUT US</a>
+       </li>
+        
+        
+        <li><a href="Event.html">BLOGS</a></li>
+        <li><a href="Menu.php">SERVICES</a></li>
+        <li><a href="Contact.html">CONTACT</a></li>
+        <li style="border-right:none"><a href="Login.html">MEMBERSHIP</a></li>
+        <i class="fa fa-bars fa-10x" aria-hidden="true"></i>
+      </div>
+    </div>
+  <div id="con">
+   <div id="contact">
+      <div id="contact-box">
+        <div id="contact-text">
+          <center><h2 style="font-size: 40px;">Feel Free to Contact With Us</h2>
+          <h3>Contact Us</h3>
+         
+          <p><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit <br>
+          sed do eiusmod tempor incididunt ut labore.</p>
+          </center>
+          
+          <div id="items" class="row">
+             <div class="col-md-4">
+             <center>
+               <i id="location" class="fa fa-map-marker" aria-hidden="true"></i>
+              
+               <h4>Address</h4>
+               <p>Lahore</p>
+               </center>
+             </div>
+            
+             <div class="col-md-4">
+             <center>
+             
+             <i id="mail" class="fa fa-envelope" aria-hidden="true"></i>
+             <h4>Mail</h4>
+             <p>123456789@umt.edu.pk</p>
+             </center>
+             </div>
+           
+             <div class="col-md-4">
+             <center>
+             <i id="mobile" class="fa fa-mobile" aria-hidden="true"></i>
+             <h4>Phone</h4>
+             <p>123546789</p>
+             </center>
+             </div>
+             
+          </div>
+        </div>
+       
+    </div>
+    </div>
+  </div>
+<script>
+function nameText() 
+{
+  var element = document.getElementById('namevalidation');
+  element.className = 'hide';
+  
+}
+function emailText() 
+{
+  var element = document.getElementById('emailvalidtion');
+  element.className = 'hide';
+  
+}
+
+function subjectText()
+ {
+  var element = document.getElementById('subjectValidation');
+  element.className = 'hide';
+  
+}
+function messageText() 
+{
+  var element = document.getElementById('messageValidation');
+  element.className = 'hide';
+  
+}
+
+function allLetter(inputtxt)
+      { 
+	  var form = true;
+	  var element = document.getElementById('namevalidation');
+	  var email = document.getElementById('email');
+	  var emailvalidtion = document.getElementById('emailvalidtion');
+	  var name2 =document.getElementById('name2');
+	  var subject = document.getElementById('subjectValidation');
+	  var showSuccess = document.getElementById('showSuccess');
+	  var button = document.getElementById('button');
+	  var message = document.getElementById('message');
+	  var messageValidation = document.getElementById('messageValidation');
+	  var error=0;
+		  
+      var letters = /^[A-Za-z]+$/;
+      if(!inputtxt.value.match(letters)){	 
+		  element.classList.remove("hide");
+		  window.scrollTo(0, 600);
+		  form = false;
+		  error++;
+	  }
+	 
+	  if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value))
+	  {
+		  emailvalidtion.classList.remove("hide");
+		  window.scrollTo(0, 800);
+		  form = false;
+		  error++;
+	  }
+	  
+	  if(!name2.value.match(letters)){
+	     subject.classList.remove("hide");
+		 form = false;
+		 error++;
+	  }
+	  if(!message.value){
+	     messageValidation.classList.remove("hide");
+		 form = false;
+		 error++;
+	  }
+	  if(form == true)
+	  {
+		 showSuccess.classList.remove("hide");
+		 button.className = 'hide';
+	  }
+	  
+	  if(error>0)
+	    return false;
+      }
+	
+
+</script>
+ 
+    
+<div  class="row">
+
+
+<form name="form" id="form" class="col-6"   method="POST" onsubmit="return allLetter(document.form.name1)" action="contact.php">
+
+   <h4>Name:</h4> 
+  <input type="text" onfocus="nameText()"  name="name1" style="width:73%; height:30px;" maxlength="50" />
+  <div id="namevalidation" style="color:red" class="hide">*Please input alphabet characters!</div>
+  <h4>Email:</h4> 
+  <input id="email" onfocus="emailText()" type="text" name="email" style="width:73%; height:30px;" maxlength="30" />
+  <div id="emailvalidtion" style="color:red" class="hide">*Please input valid email!</div>
+  
+  <h4>Subject:</h4> 
+  <input type="text" id="name2" onfocus="subjectText()" name="name2" style="width:73%; height:30px;" maxlength="50">
+  <div id="subjectValidation" style="color:red" class="hide">*Please input valid Subject!</div>
+  <h4>Message:</h4> 
+  <textarea id="message" onfocus="messageText()" name="message" rows="15" columns="20" maxlength="300" style=" width: 477px;
+    height: 227px;"></textarea>
+    <div id="messageValidation" style="color:red" class="hide">*Please input message!</div>
+    <br />
+  <input id="button" type="submit" value="Submit">
+</form>
+
+
+
+<div id="googleMap" class="col-sm-6" >
+<h2 style="margin-top:5%; border:0px;">Find Us Here..</h2>
+<div id="map" style="margin-top:8%;">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.194604500104!2d74.42153001448293!3d31.518814654373926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190f9c663e93e7%3A0xa30d716a19044478!2sAirport%20Road%2C%20Lahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1589903778679!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+</div>
+
+
+</div>
+ </div>      
+ 
+ 
+ <div class="row" id="information">
+  <div id="info-block" class="col-md-4">
+    <h5>Info Home Clean</h5>
+    <br>
+ <p>UMT
+       <br>
+       +123456789
+       <br>
+       </p>
+       <a href="https://www.facebook.com"><i id="fb" class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="https://www.twitter.com"><i id="twitter" class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a href="https://www.google.com"><i id="google" class="fa fa-google-plus" aria-hidden="true"></i></a>
+      <a href="https://web.whatsapp.com"><i id="whatsapp" class="fa fa-whatsapp" aria-hidden="true"></i></a>
+  </div>
+  <div id="photos-block" class="col-md-4">
+     <h5>Photos</h5>
+     <div class="row">
+       <div id="photos-images1" class="col">
+         <img src="images/car.png" style="width: 120px ; height:120px">
+         <img src="images/pic1.jpg" style="width: 120px ; height:120px">
+         <img src="images/door.jpg" style="width: 120px ; height:120px">
+       </div>
+     </div>
+     
+     <div class="row">
+       <div id="photos-images2" class="col">
+         <img src="images/pic2.jpg" style="width: 120px ; height:120px">
+         <img src="images/tablepol.jpg" style="width: 120px ; height:120px">
+         <img src="images/service.jpg" style="width: 120px ; height:120px">
+       </div>
+     </div>
+  </div>
+     
+  <div id="news-block" class="col-md-4">
+     <h5>Latest News</h5>
+     <br>
+     <p><a href="#">The Making of a Legacy: First Steps in the Trump Era</a>
+     <br>
+     08 August 2022
+     <br><br>
+     <a href="#">How Marching for Science Risks Politicizing It</a>
+     <br>
+     08 August 2022
+     <br><br>
+     <a href="#">After Setbacks and Suits, Miami to Open Science Museum</a>
+     <br>
+     08 August 2022
+     </p>
+     
+  </div>
+  
+</div>
+
+<div id="footer" class="row" style="height:100px">
+  <div class="col">
+    <center>
+   <br><br>
+   <p>Final Year Project
+    
+   
+    </p>
+    </center>
+  </div>
+
+</div>
+
+
+
+</div>
+</body>
+
+</html>

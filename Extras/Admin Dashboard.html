@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Admin Dashboard</title>
+<link href="bootstrap-4.4.1-dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="admin dashboard.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="container-fluid">
+ 
+    <div id="logos">
+      <div class="row">
+        <div id="logos-left" class="col-lg-6">
+          <a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="https://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="https://www.google.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+          <a href="https://web.whatsapp.com"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      </div>
+      
+      <div id="logos-right" class="col-lg-6">
+        <i class="fa fa-phone" aria-hidden="true"><span> 04234567821</span></i>
+        <i class="fa fa-mobile" aria-hidden="true"><span> +923001234512</span></i>
+        <i class="fa fa-envelope" aria-hidden="true"><span> contact@mail.com</span></i>
+      </div>
+    </div>
+    </div>
+    <div class="row" id="main-menu">
+      <div class="col-lg-4" id="site-logo">
+        <img src="images/logo6.png" style="width: 40%;margin-top: -2%;">
+      </div>
+     
+      <div class="col-lg-7" id="menu-items">
+        <li><a href="Index.php">HOME</a></li>
+        <li><a href="About Us.html">ABOUT US</a></li>
+        <li><a href="Event.html">EVENTS</a></li>
+        <li><a href="Menu.php">MENU</a></li>
+        <li><a href="Contact.html">CONTACT</a></li>
+        <li style="border-right:none"><a href="Membership.html">MEMBERSHIP</a></li>
+        <i class="fa fa-bars fa-10x" aria-hidden="true"></i>
+      </div>
+    </div>
+     
+    <center><h1 style="padding:5%; border-top:1px solid black; letter-spacing:2px;">ADMIN DASHBOARD</h1></center>
+    
+    <div class="labels" class="col-sm-12 col-lg-12">
+    <h3>Add an Item</h3>
+    <p>Dashboard / Add items</p>
+    </div>
+    
+    <div id="form" class="signup-form">
+    <form action="/Whats Cooking/add_item.php" method="post" enctype="multipart/form-data">
+		<h2>Add Item</h2>
+		<p class="hint-text">Add a new dish to your menu.</p>
+        <div class="form-group">
+		
+		<input type="text" class="form-control" name="dish_name" placeholder="Dish Name" required="required">
+				   	
+        </div>
+		
+        <div class="form-group">
+        	<input type="number" class="form-control" name="price" placeholder="Item's Price" required="required">
+        </div>
+		<div class="form-group">
+            <input type="text" class="form-control" name="description" placeholder="Description" required="required">
+        </div>
+		<label>Item's Image</label>
+           <input type="file" id="img" name="img" required style="padding-bottom:5%;">
+             
+        
+		<div class="form-group">
+            <button id="r-button" name="submit" type="submit" class="btn btn-success btn-lg btn-block">Add to Menu</button>
+        </div>
+    </form>
+
+</div>
+
+    <div class="labels" class="col-sm-12 col-lg-12" style="margin-top:3%; margin-bottom:6%;">
+    <h3>Delete Items</h3>
+    <p>Dashboard / Delete items</p>
+    </div>
+    
+    <div class="row" id="information">
+      <div id="info-block" class="col-md-4">
+        <h5>Info What's Cooking</h5>
+        <br>
+        <p>262 Milacina Mrest Street Behansed.
+           <br>
+           +84 3333 6789.
+           <br>
+           support@yoursiteurl.com</p>
+           <a href="https://www.facebook.com"><i id="fb" class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="https://www.twitter.com"><i id="twitter" class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="https://www.google.com"><i id="google" class="fa fa-google-plus" aria-hidden="true"></i></a>
+          <a href="https://web.whatsapp.com"><i id="whatsapp" class="fa fa-whatsapp" aria-hidden="true"></i></a>
+      </div>
+      <div id="photos-block" class="col-md-4">
+         <h5>Photos</h5>
+         <div class="row">
+           <div id="photos-images1" class="col">
+             <img src="images/g7.jpg">
+             <img src="images/g8.jpg">
+             <img src="images/g9.jpg">
+           </div>
+         </div>
+         
+         <div class="row">
+           <div id="photos-images2" class="col">
+             <img src="images/g2.jpg">
+             <img src="images/g4.jpg">
+             <img src="images/g6.jpg">
+           </div>
+         </div>
+      </div>
+         
+      <div id="news-block" class="col-md-4">
+         <h5>Latest News</h5>
+         <br>
+         <p><a href="#">The Making of a Legacy: First Steps in the Trump Era</a>
+         <br>
+         08 October 2018
+         <br><br>
+         <a href="#">How Marching for Science Risks Politicizing It</a>
+         <br>
+         08 October 2018
+         <br><br>
+         <a href="#">After Setbacks and Suits, Miami to Open Science Museum</a>
+         <br>
+         08 October 2018
+         </p>
+         <br><br>
+      </div>
+      
+    </div>
+    
+    <div id="footer" class="row">
+      <div class="col">
+        <center>
+       <br><br>
+        <p>Copyright © 2019 All Rights Reserved.
+        <br>
+        Powered by: <span id="passionates">The Passionates</span>
+        <br><br>
+        </p>
+        </center>
+      </div>
+    
+    </div>
+    
+    
+  
+</div>
+</body>
+</html>
